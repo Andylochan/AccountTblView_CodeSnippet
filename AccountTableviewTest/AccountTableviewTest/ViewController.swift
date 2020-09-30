@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var table: UITableView!
     
     private let options = [
-        ["Wallet", "Delivery Zones", "Refer a friend"],
+        ["Payments", "Address Book", "Refer a friend"],
         ["FAQs", "Contact Support", "Sign Out"]
     ]
 
@@ -70,9 +70,9 @@ extension ViewController: MyTableViewCellDelegate {
 
         switch title {
         case options[0][0]:
-            print("Wallet pressed")
+            print("Payments pressed")
         case options[0][1]:
-            print("Delivery Zone pressed")
+            print("Address pressed")
             a()
         case options[0][2]:
             print("Referral pressed")
